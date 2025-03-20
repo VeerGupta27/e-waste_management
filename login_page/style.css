@@ -28,6 +28,19 @@ body {
     
 }
 
+.login-container .display-signup{
+    height: 500px;
+    width: 1130px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.79);
+    
+    
+}
+
 h1 {
     font-family:"Poppins", sans-serif;
     font-size: 4rem;
@@ -65,9 +78,9 @@ button {
     font-size: 1.2rem;
     font-weight: bold;
 }
-.login-container .sign-in{
+.login-container .sign-in, .login-container .sign-up{
     font-size: 1.2rem;
-    position: 
+    
 }
 a {
     color: #007BFF;
