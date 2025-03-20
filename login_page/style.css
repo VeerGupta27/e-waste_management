@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-image: url(Images/Background.jpg); /* Replace with the actual image path */
+    background-size: cover;
+    background-position: center;
+}
+.login-container {
+    /* background-color: rgba(153, 164, 149, 0.79); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* padding: 20px; */
+}
+.login-container .display-login{
+    height: 500px;
+    width: 800px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.79);
+    
+    
+}
+
+h1 {
+    font-family:"Poppins", sans-serif;
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-shadow:0,0,5,rgba(225, 26, 26, 0.79);
+
+}
+input{
+    width:80%;
+    height:13%;
+    margin: 10px;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    background-color:#848e83 ;
+    font-size: 1.2rem;
+    color:#848e83 ;
+}
+input::placeholder{
+    color:white;
+}
+form{
+    text-align: center;
+}
+
+button {
+    width: 83.5%;
+    /* height: 25%; */
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #007BFF;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.login-container .sign-in{
+    font-size: 1.2rem;
+    position: 
+}
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+p {
+    margin: 10px 0;
+}
