@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Page with Hamburger Menu</title>
+    <link rel="stylesheet" href="styleHomepage.css">
+</head>
+<body>
+    <div class="header">
+        <div class="hamburger-menu" onclick="showSecondPage()">☰</div>
+
+        <!-- First Page  -->
+        <div id="firstPage">
+            <h1>ReTech Solution</h1>
+        </div>
+        <div class="sign-in">
+            <button class="button" onclick="window.location.href='../login_page/index.html'">Sign up/ Sign in</button>
+        </div>
+    </div>
+
+        <!-- Second Page  -->
+        <div id="secondPage">
+            <div class="close-btn" onclick="hideSecondPage()">X</div>
+            <div class="container">
+                <div class="box" onclick="window.location.href='../E-WasteRecyclation/EwasteIndex.html'">
+                    <h2>E-Waste Registration</h2>
+                </div>
+                <div class="box" onclick="window.location.href='../Carbon_Footprint_Calculator/Carbon.html'">
+                    <h2>Carbon-footprint Calculator</h2>
+                </div>
+                <div class="box">
+                    <h2>State-wise Carbon-footprint</h2>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function showSecondPage() {
+                document.getElementById('secondPage').style.display = 'block';
+                document.getElementById('firstPage').style.display = 'none';
+            }
+
+            function hideSecondPage() {
+                document.getElementById('secondPage').style.display = 'none';
+                document.getElementById('firstPage').style.display = 'block';
+            }
+        </script>
+</body>
+</html>

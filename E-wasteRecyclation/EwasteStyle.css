@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    background: url(/homepage/backgroundHomepage.webp);
+    background-size:cover;
+}
+
+.container {
+    background: rgb(172, 172, 172);
+    padding: 20px;
+    margin: 50px auto;
+    width: 50vw;
+    height: 70vh;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+h2 {
+    color: #000000;
+}
+#ewasteType {
+   display: inline-flex;
+   flex-wrap: wrap;
+}
+#ewasteType label {
+    font-size: 25px;
+    text-decoration: bold;
+    margin-right: 5px;
+    margin-left: 0px;
+}
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 25px;
+}
+input[type="checkbox"] {
+    width: 25px; 
+    height: 25px;
+    accent-color: transparent; 
+}
+input[type="checkbox"]:checked {
+    accent-color: blue; /* Changes the checkbox color to blue when checked */
+  }
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-right: 5px;
+    border: 1px solid #0e0e0e;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 25px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.grid {
+    display: inline-grid;
+    grid-template-columns: 1fr ; /* Two columns */
+    grid-template-rows: 1fr ;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+}

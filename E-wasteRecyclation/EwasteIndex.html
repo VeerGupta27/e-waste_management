@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Waste Recyclation Form</title>
+    <link rel="stylesheet" href="EwasteStyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>E-Waste Recyclation Form</h1>
+        <div class="grid">
+            <form action="#" id="ewasteForm">
+                <label for="ewasteType">Type of E-Waste:</label>
+                <div id="ewasteType" required>
+                    <label><input type="checkbox" id="type" name="ewasteType" value="Plastic"> Plastic</label>
+                    <label><input type="checkbox" id="type" name="ewasteType" value="Metal"> Metal</label> <br>
+                    <label><input type="checkbox" id="type" name="ewasteType" value="Battery"> Battery</label>
+                    <label><input type="checkbox" id="type" name="ewasteType" value="Circuit Board"> Circuit Board</label>
+                </div>
+                <br>
+    
+                <label for="weight">Weight (in kg):</label>
+                <input type="number" id="weight" required min="0">
+    
+                <label for="pickupLocation">Pickup Location:</label>
+                <input type="text" id="pickupLocation" required>
+    
+                <label for="pickupDate">Preferred Pickup Date:</label>
+                <input type="date" id="pickupDate" required>
+    
+                <label for="contact">Contact Details:</label>
+                <input type="text" id="contact" required>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <p id="responseMessage"></p>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+   <script src="App1.js"></script>
+</body>
+</html>

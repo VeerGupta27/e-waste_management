@@ -25,9 +25,7 @@ body {
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.79);
     
-    
 }
-
 .login-container .display-signup{
     height: 500px;
     width: 1130px;
@@ -57,7 +55,7 @@ input{
     border: none;
     background-color:#848e83 ;
     font-size: 1.2rem;
-    color:#848e83 ;
+    color:#ffffff ;
 }
 input::placeholder{
     color:white;
