@@ -26,50 +26,8 @@
                     <a href="#" id="signup-link">Signup</a>
                 
             </div>
-        </div>
-      
-               
-        <div class="display-signup" id="signup-form" style="display: none;">
-            <h1>ReTech Solution - Sign Up</h1>
-            <form action="#">
-                <input type="text" placeholder="Full Name" required>
-                <input type="email" placeholder="Email Address" required>
-                <input type="password" placeholder="Password" required>
-                <input type="password" placeholder="Confirm Password" required>
-                <button type="submit">Sign up</button>
-            </form>
-            <div class="sign-un">
-                -------------------- Or --------------------
-                <br>
-                <span>Already have an account? </span>
-                <a href="#" id="login-link">Login</a>
-            </div>
-        </div>
+        <div>
+        
     </div>
-
-
-
-    <script>
-        // Get the elements
-        const loginForm = document.getElementById('login-form');
-        const signupForm = document.getElementById('signup-form');
-        const signupLink = document.getElementById('signup-link');
-        const loginLink = document.getElementById('login-link');
-
-        // When 'Signup' link is clicked, hide the login form and show the signup form
-        signupLink.addEventListener('click', function (e) {
-            e.preventDefault(); // Prevent the default action
-            loginForm.style.display = 'none'; // Hide login form
-            signupForm.style.display = 'block'; // Show signup form
-        });
-
-        // When 'Login' link is clicked, hide the signup form and show the login form
-        loginLink.addEventListener('click', function (e) {
-            e.preventDefault(); // Prevent the default action
-            signupForm.style.display = 'none'; // Hide signup form
-            loginForm.style.display = 'block'; // Show login form
-        });
-    </script>
-
 </body>
 </html> 
