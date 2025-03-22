@@ -2,9 +2,9 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
-    max-width: 800px;
+    max-width: 80%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 1%;
     background-image: url('login_bg.webp')  ;
     background-size:cover;
 
@@ -14,7 +14,7 @@ body {
     color: #2c7f3e;
     border-bottom: 2px solid #2c7f3e;
     padding-bottom: 10px;
-    posi
+    
   }
   
   .calculator-section {
@@ -23,6 +23,7 @@ body {
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size:25px;
   }
   
   .section-title {
@@ -43,6 +44,7 @@ body {
     border: 1px solid #ddd;
     border-radius: 4px;
     box-sizing: border-box;
+    height: 40px;
   }
   
   button {
@@ -50,7 +52,7 @@ body {
     color: white;
     border: none;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 28px;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -86,6 +88,6 @@ body {
   }
   
   .chart-container {
-    height: 300px;
+    height: 90px;
     margin-top: 20px;
   }
