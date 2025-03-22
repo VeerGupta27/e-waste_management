@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>E-Waste Recycler Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+    #map {
+      height: 400px;
+      width: 100%;
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px;
+      margin-top: 20px;
+      background-color: blue;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>E-Waste Recycler Tracker</h1>
+  <p>Track the recycler's location as they approach your location to collect e-waste.</p>
+  
+  <!-- Button to show the map -->
+  <button onclick="initMap()">Show My Location</button>
+  
+  <!-- Map container -->
+  <div id="map"></div>
+
+  <script>
+    let map;
+    let userMarker, recyclerMarker;
+
+    // Dummy initial recycler location
+    let recyclerLocation = { lat: 19.2, lng: 72.8 }; // Replace with actual location from WebSocket
+
+    // Function to get user's location and initialize the map
+    function initMap() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+          const userLocation = {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude
+          };
+
+          // Create the map centered on the user's location
+          map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 10,
+            center: userLocation,
+          });
+
+          // Add marker for user's location
+          userMarker = new google.maps.Marker({
+            position: userLocation,
+            map: map,
+            title: "Your Location",
+            icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
+          });
+
+          // Add marker for recycler's location
+          recyclerMarker = new google.maps.Marker({
+            position: recyclerLocation,
+            map: map,
+            title: "Recycler Location",
+            icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png",
+          });
+
+          // Simulate real-time updates from WebSocket
+          setupWebSocket();
+        });
+      } else {
+        alert("Geolocation is not supported by this browser.");
+      }
+    }
+
+    // Simulate WebSocket for real-time recycler location updates
+    function setupWebSocket() {
+      // Simulating a WebSocket connection
+      setInterval(() => {
+        // Randomly update recycler location (for demo purposes)
+        recyclerLocation.lat += 0.001;
+        recyclerLocation.lng += 0.001;
+
+        // Update the recycler's marker position on the map
+        recyclerMarker.setPosition(recyclerLocation);
+      }, 2000); // Update every 2 seconds
+    }
+  </script>
+
+  <!-- Google Maps API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUgtjUQy7Me8swnUJg4k_7l43Q8L22KvY"></script>
+</body>
+</html>
+
+
